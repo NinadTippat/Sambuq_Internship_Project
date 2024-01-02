@@ -8,6 +8,7 @@ const User = require('./models/User');
 const Leave = require('./models/Leave');
 const authMiddleware = require('./middleware/authMiddleware.js');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 app.use(bodyParser.json());
