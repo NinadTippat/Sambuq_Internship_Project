@@ -1,0 +1,135 @@
+.manager-page{
+    height: 100%;
+    overflow: hidden;
+}
+.manager-section{
+    font-family: 'Raleway', sans-serif;
+    color: #4a0e94;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.manager{
+    width: 70%;
+    padding: 40px 50px ;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.21);
+    margin-bottom: 60px;
+    flex-direction: column;
+}
+.manager>table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    background: transparent;
+}
+
+.manager th, .manager td {
+    border: 1px solid #5f5f5f;
+    text-align: left;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.manager th {
+    background: rgb(224, 202, 252);
+}
+
+.manager tbody td {
+    padding-left: 20px;
+}
+
+.leave-status{
+    display: flex;
+    flex-direction: column;
+    outline:  none;    
+}
+.status-btn{
+    outline: none;
+    font-size: 18px;
+    border: 1px solid rgb(134, 134, 134);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #4a0e94;
+
+}
+.approve{
+    background-color: rgb(191, 255, 191);
+}
+.approve:hover{
+    background-color: rgb(95, 255, 95);
+
+}
+.reject{
+    background-color: rgb(255, 179, 179);
+}
+.reject:hover{
+    background-color: rgb(250, 106, 106);
+}
+.secondary-nav{
+    margin-bottom: 30px;
+}
+.secondary-nav>ul{
+    width: 60%;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.secondary-nav>ul>a{
+    text-decoration: none;
+    list-style: none;
+    border: 1px solid rgb(87, 87, 87);
+    background-color: #e1c8ff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.secondary-nav>ul>li:hover{
+    color: white;
+    background-color: #8a30f7;
+}
+.noleaves{
+    margin-top: 20px;
+}
+@media (max-width: 500px){
+    .manager {
+        width: 91%; 
+        padding: 20px;
+        overflow-x: auto; 
+    }
+    .manager th, .manager td {
+        padding: 8px;
+        font-size: 12px;
+    }
+    .pending-heading{
+        font-size: 18px;
+    }
+    .status-btn{
+        outline: none;
+        font-size: 13px;
+        padding: 4px 8px;
+        margin-bottom: 7px;
+        cursor: pointer;
+        color: #4a0e94;
+    }
+    .manager tbody td {
+        padding-left: 8px;
+    }
+    .secondary-nav>ul>li{
+        text-align: center;
+        font-size: 15px;
+    }
+    .secondary-nav>ul{
+        width: 100%;
+    }
+}

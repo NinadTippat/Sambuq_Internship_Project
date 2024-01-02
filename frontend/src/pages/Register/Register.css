@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+.signup{
+    height: 100%;
+}
+.register{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.register-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 0px 60px 0px;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.313);
+    padding: 40px 60px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Nunito Sans', sans-serif;
+    /* border: 1px solid red; */
+
+}
+.register-form>h3{
+    color: #3800A6;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.register-form>label{
+    margin-bottom: 10px;
+    color: #3800A6;
+}
+.register-form>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #1a0747;
+}
+.select{
+    color: #1a0747;
+    background: none;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+.submit-btn{
+    background: transparent;
+    outline: none;
+    border: 1px solid rgb(118, 118, 118);
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 30%;
+    font-size: 20px;
+}
+.submit-btn:hover{
+    background-color: #d4beff;
+}
+
+@media (max-width: 500px){
+    .register-form{
+        width: 50%;
+        padding: 30px 50px;
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+    .register-form>h3{
+        color: #3800A6;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .register-form>input{
+        font-size: 18px
+    }
+    .submit-btn{
+        width: 60%;
+        font-size: 16px;
+    }
+    .select{
+        font-size: 16px;
+    }
+}

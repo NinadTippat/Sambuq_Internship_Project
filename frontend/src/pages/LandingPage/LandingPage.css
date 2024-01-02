@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+.landing{
+    height: 100vh;
+}
+.landing-page{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.hero-section{
+    width: 80%;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.21);
+}
+.hero-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Nova Square', sans-serif;
+}
+.hero-left>h1{
+    color: #629BF2;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.hero-left>p{
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+.hero-btn{
+    text-decoration: none;
+    width: 20%;
+    font-family: 'Nova Square', sans-serif;
+    font-size: 1rem;
+    padding: 15px 25px;
+    background-color: #629BF2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+.hero-right{
+    width: 40%;
+}
+.hero-right>img{
+    width: 400px;
+}
+@media (max-width: 900px){
+    .landing-page{
+        margin-top: 30px;
+    }
+    .hero-section{
+        width: 80%;
+        padding: 30px 40px;
+        border-radius: 20px;
+    }
+    .hero-left>h1{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .hero-left>p{
+        margin-bottom: 30px;
+        font-size: 1rem;
+    }
+    .hero-btn{
+        width: 40%;
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+@media(max-width: 500px){
+    .hero-section{
+        flex-direction: column;
+        width: 65%;
+    }
+    .hero-left{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-right>img{
+        width: 70vw;
+    }
+}
